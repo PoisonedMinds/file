@@ -16,7 +16,7 @@ import java.util.ArrayList;
  * @author Steven Biro
  */
 public class fileRead {
-        ArrayList fileRead (String path) {
+        public static ArrayList read (String path) {
         int num = 0;
         ArrayList contents = new ArrayList();
         String line;
@@ -25,8 +25,8 @@ public class fileRead {
                     new FileReader(path));
 
             while ((line = br.readLine()) != null) {
-                contents.set(num, line);
-                
+                contents.add(num, line);
+                num++;
             }
         } catch (FileNotFoundException ex) {
             System.out.println("File not found");
