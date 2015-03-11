@@ -16,7 +16,8 @@ import java.util.ArrayList;
  * @author Steven Biro
  */
 public class fileRead {
-        public static ArrayList read (String path) {
+
+    public static ArrayList read(String path) {
         int num = 0;
         ArrayList contents = new ArrayList();
         String line;
@@ -36,6 +37,6 @@ public class fileRead {
             System.out.println("An error has occured");
             System.exit(1);
         }
-            return contents;
+        return contents;
     }
 }
