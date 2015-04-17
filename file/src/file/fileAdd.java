@@ -19,8 +19,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
 
 /**
  * @author Steven Biro
@@ -38,7 +37,6 @@ public class fileAdd {
             writer.close();
         } catch (IOException ex) {
             System.out.println("An error has occured.");
-            Logger.getLogger(fileWrite.class.getName()).log(Level.SEVERE, null, ex);
             System.exit(0);
         }
     }
